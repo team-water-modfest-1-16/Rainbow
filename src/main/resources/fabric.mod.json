@@ -25,7 +25,7 @@
       "hpru.RainbowMod"
     ],
     "client": [
-      "hpru.RainbowClient"
+      "hpru.client.RainbowClient"
     ]
   },
 
