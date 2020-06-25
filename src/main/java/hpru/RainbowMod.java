@@ -19,6 +19,6 @@ public class RainbowMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        Registry.register(Registry.ITEM, new Identifier("tutorial", "fabric_item"), RAINBOW_ITEM);
+        Registry.register(Registry.ITEM, new Identifier("rainbow", "rainbow_item"), RAINBOW_ITEM);
     }
 }
