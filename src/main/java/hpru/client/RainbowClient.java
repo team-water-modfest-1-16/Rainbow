@@ -1,4 +1,4 @@
-package hpru;
+package hpru.client;
 
 import hpru.client.render.entity.RainbowArrowEntityRenderer;
 import net.fabricmc.api.ClientModInitializer;

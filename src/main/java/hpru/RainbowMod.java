@@ -25,7 +25,7 @@ public class RainbowMod implements ModInitializer{
                     Registry.ENTITY_TYPE,
                     new Identifier("rainbow", "rainbow_arrow"),
                     FabricEntityTypeBuilder.create(SpawnGroup.MISC, (EntityType.EntityFactory<RainbowArrowEntity>) RainbowArrowEntity::new)
-                            .dimensions(EntityDimensions.fixed(.06f, .06f))
+                            .dimensions(EntityDimensions.fixed(.5f, .5f))
                             .spawnableFarFromPlayer()
                             .trackable(128, 1)
                             .build()
