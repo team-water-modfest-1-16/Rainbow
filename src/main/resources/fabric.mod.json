@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "rainbow",
+  "version": "${version}",
+
+  "name": "Rain Bow",
+  "description": "A bow that rains arrows",
+  "authors": [
+    "Hexeption",
+    "Uriel",
+    "Pndy",
+    "rypofalem"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "hpru.RainbowMod"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
