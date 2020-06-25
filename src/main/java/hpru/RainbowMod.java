@@ -13,7 +13,6 @@ public class RainbowMod implements ModInitializer {
             new Item.Settings()
                     .group(ItemGroup.COMBAT)
                     .maxDamage(500)
-                    .maxCount(1)
     );
 
     @Override
