@@ -1,0 +1,6 @@
+{
+    "parent": "rainbow:item/rainbow",
+    "textures": {
+        "layer0": "rainbow:item/rainbow_pulling_0"
+    }
+}
