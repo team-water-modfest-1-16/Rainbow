@@ -1,12 +1,12 @@
 package hpru.item;
 
+import hpru.entity.projectile.RainbowArrowEntity;
 import net.fabricmc.fabric.api.object.builder.v1.client.model.FabricModelPredicateProviderRegistry;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
-import net.minecraft.item.ArrowItem;
 import net.minecraft.item.BowItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -52,7 +52,7 @@ public class RainbowItem extends BowItem {
                         for(int i = 0; i < 6; i++){
                             double arrowLineLength = 2;
                             double offset = (arrowLineLength / 6d * i) - (arrowLineLength/2); // an even spread of 6 arrows across a 2 block length centered on the origin
-                            PersistentProjectileEntity persistentProjectileEntity = ((ArrowItem) Items.ARROW).createArrow(world, arrowStack, playerEntity);
+                            PersistentProjectileEntity persistentProjectileEntity = new RainbowArrowEntity(world, playerEntity);
                             persistentProjectileEntity.setProperties(playerEntity, playerEntity.pitch, playerEntity.yaw, 0.0F, pullProgress * 3.0F, 1.0F);
                             Vec3d pos = persistentProjectileEntity.getPos();
                             persistentProjectileEntity.teleport(pos.x, pos.y + offset, pos.z);
