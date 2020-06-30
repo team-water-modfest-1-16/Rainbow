@@ -1,6 +1,8 @@
 package hpru.client;
 
 import hpru.client.render.entity.RainbowArrowEntityRenderer;
+import hpru.item.RainbowItem;
+
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -16,5 +18,6 @@ public class RainbowClient implements ClientModInitializer {
     public void onInitializeClient() {
         EntityRendererRegistry.INSTANCE.register(ARROW_ENTITY_TYPE,
                 (EntityRenderDispatcher manager, EntityRendererRegistry.Context context) -> new RainbowArrowEntityRenderer(manager));
+        RainbowItem.registerClient();
     }
 }
